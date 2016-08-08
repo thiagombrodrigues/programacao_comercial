@@ -1,0 +1,8 @@
+# Exclui todo o conteudo do diretorio virtual, exceto o sub-diretorio sistema
+virtual/*
+!virtual/sistema
+
+# Exclui todos os arquivos com as seguintes extensoes
+*.pyc
+*.pyo
+.env
