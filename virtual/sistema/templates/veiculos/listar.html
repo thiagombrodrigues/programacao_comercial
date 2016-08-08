@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Lista de veículos cadastrados</title>
+	</head>
+	<body>
+		<a href="/veiculos/novo/">
+			Cadastrar novo veículo
+		</a>
+		<ul>
+			{% for veiculo in object_list %}
+	    		<li>
+	    			<a href="/veiculos/{{ veiculo.id }}/">
+	    				{{ veiculo.id }}
+	    			</a>
+
+	    			{{ veiculo }}
+
+	    			<a href="/veiculos/excluir/{{ veiculo.id }}/">
+	    				( apagar )
+	    			</a>
+	    		</li>
+			{% endfor %}
+		</ul>
+	</body>
+</html>

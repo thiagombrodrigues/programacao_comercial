@@ -1,0 +1,13 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Cadastrar novo veículo</title>
+	</head>
+	<body>
+		<form action="/veiculos/novo/" method="post">
+			{% csrf_token %}
+			{{ form }}
+			<input type="submit" value="Salvar" />
+		</form>
+	</body>
+</html>
